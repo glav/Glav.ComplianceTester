@@ -5,9 +5,8 @@ using System.Text;
 
 namespace ComplianceTester.Contracts
 {
-    public interface IComplianceResult
+    public interface IComplianceComponent
     {
-        bool IsCompliant { get; set; }
-        List<string> ComplianceMessages { get;  }
+        string GetResponseBody(string url);
     }
 }

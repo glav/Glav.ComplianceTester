@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ComplianceTester.Contracts
 {
-    public interface IComplianceDataSource
+    public interface IComplianceDataSource : IComplianceComponent
     {
         string GetDataToCheck();
     }

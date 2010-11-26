@@ -6,7 +6,7 @@ using ComplianceTester.Model;
 
 namespace ComplianceTester.Contracts
 {
-    public interface IComplianceValidationProvider
+    public interface IComplianceValidationProvider :  IComplianceComponent
     {
         IComplianceResult CheckCompliance(IComplianceDataSource dataSource, ComplianceLevel complianceLevel);
     }

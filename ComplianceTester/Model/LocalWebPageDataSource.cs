@@ -9,7 +9,7 @@ using System.IO;
 
 namespace ComplianceTester.Model
 {
-    public class LocalWebPageDataSource : IComplianceDataSource
+    public class LocalWebPageDataSource : ComplianceComponentBase, IComplianceDataSource
     {
         private string _pageUri;
 
@@ -20,14 +20,7 @@ namespace ComplianceTester.Model
 
         public string GetDataToCheck()
         {
-            WebClient client = new WebClient();
-            using (var stream = client.OpenRead(_pageUri))
-            {
-                using (var rdr = new StreamReader(stream))
-                {
-                    return rdr.ReadToEnd();
-                }
-            }
+            return GetResponseBody(_pageUri);
         }
     }
 }
