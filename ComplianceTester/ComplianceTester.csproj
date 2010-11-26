@@ -45,7 +45,7 @@
     <Compile Include="Contracts\IComplianceResult.cs" />
     <Compile Include="Contracts\IComplianceValidationProvider.cs" />
     <Compile Include="Model\ComplianceLevel.cs" />
-    <Compile Include="Model\LocalWebPageProvider.cs" />
+    <Compile Include="Model\LocalWebPageDataSource.cs" />
     <Compile Include="Model\W3CComplianceProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -9,11 +9,11 @@ using System.IO;
 
 namespace ComplianceTester.Model
 {
-    public class LocalWebPageProvider : IComplianceDataSource
+    public class LocalWebPageDataSource : IComplianceDataSource
     {
         private string _pageUri;
 
-        public LocalWebPageProvider(string pageUri)
+        public LocalWebPageDataSource(string pageUri)
         {
             _pageUri = pageUri;
         }
